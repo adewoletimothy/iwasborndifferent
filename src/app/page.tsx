@@ -359,9 +359,10 @@ export default function BookLaunchLandingPage() {
 
         <SectionHeading
           eyebrow="About the author"
-          title="More than an author, a voice with a burden"
+          title=""
           subtitle=""
         />
+        <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">More than an author, a voice with a burden</h1>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="rounded-[2rem]  border border-white/20 bg-white/10 backdrop-blur-md p-8 shadow-sm">
