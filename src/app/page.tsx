@@ -16,6 +16,9 @@ import {
   Users,
   Menu,
   Book,
+  Circle,
+  CircleAlert,
+  CoinsIcon,
 } from "lucide-react";
 
 const SELAR_LINK = "https://selar.com/w44440h644";
@@ -79,15 +82,27 @@ const gallery = [
     alt: "Author on stage during a ministry or leadership session",
   },
   {
+    src: "/8.jpg",
+    alt: "Author on stage during a ministry or leadership session",
+  },
+  {
+    src: "/11.jpg",
+    alt: "Author on stage during a ministry or leadership session",
+  },
+  {
     src: "/4.jpg",
     alt: "Author on stage during a ministry or leadership session",
   },
   {
-    src: "/5.jpg",
+    src: "/7.jpg",
     alt: "Author on stage during a ministry or leadership session",
   },
   {
     src: "/6.jpg",
+    alt: "Author on stage during a ministry or leadership session",
+  },
+  {
+    src: "/10.jpg",
     alt: "Author on stage during a ministry or leadership session",
   },
 ];
@@ -104,7 +119,7 @@ function SectionHeading({
   return (
     <div className="max-w-2xl">
       <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-red-200 bg-white/80 px-4 py-1 text-sm font-medium text-red-700 shadow-sm backdrop-blur">
-        <Sparkles className="h-4 w-4" />
+        <Circle className="h-4 w-4" />
         {eyebrow}
       </div>
       <h2 className="text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
@@ -167,8 +182,13 @@ export default function BookLaunchLandingPage() {
       <header className="fixed left-0 right-0 top-0 z-50 px-4 pt-4 sm:px-6">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 rounded-full border border-white/40 bg-white/20 px-4 py-3 shadow-2xl shadow-zinc-950/10 backdrop-blur-xl backdrop-saturate-150 sm:px-6">
           <a href="#top" className="flex items-center gap-3" onClick={() => setMobileOpen(false)}>
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-red-600 text-white shadow-lg shadow-red-600/20">
-              <Book className="h-5 w-5" />
+            <div className="flex h-10 w-10 items-center justify-center ">
+              {/* <Book className="h-5 w-5" /> */}
+              <img
+                src="/bo.png"
+                alt="book"
+                className=" object-cover object-top grayscale transition duration-500 hover:grayscale-0"
+              />
             </div>
             <div className="hidden sm:block">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-700">
@@ -236,7 +256,7 @@ export default function BookLaunchLandingPage() {
         </div>
       </header>
 
-      <section id="top" className="relative overflow-hidden pt-20 border-b border-gray-300">
+      <section id="top" className="relative overflow-hidden pt-30 border-b border-gray-300">
         {/* <div className="absolute inset-0 -z-0">
           <div className="absolute left-[-8rem] top-[-6rem] h-72 w-72 rounded-full bg-red-500/10 blur-3xl" />
           <div className="absolute right-[-7rem] top-32 h-80 w-80 rounded-full bg-zinc-400/10 blur-3xl" />
@@ -251,7 +271,7 @@ export default function BookLaunchLandingPage() {
               className="max-w-2xl"
             >
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/80 px-4 py-2 text-sm text-zinc-700 shadow-sm backdrop-blur">
-                <Flame className="h-4 w-4 text-red-600" />
+                {/* <Flame className="h-4 w-4 text-red-600" /> */}
                 A message for people called to stand out
               </div>
 
@@ -304,7 +324,7 @@ export default function BookLaunchLandingPage() {
                       </p>
                       <p className="mt-1 text-lg font-semibold">Timothy Adewole</p>
                     </div>
-                    <Users className="h-6 w-6 text-red-400" />
+                    {/* <Users className="h-6 w-6 text-red-400" /> */}
                   </div>
 
                   <div className="mt-6 overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 p-3">
@@ -330,7 +350,13 @@ export default function BookLaunchLandingPage() {
         </div>
       </section>
 
-      <section id="about" className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-10">
+      <section
+        id="about"
+        className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-10 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/me.jpg')" }}
+      >
+        {/* <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div> */}
+
         <SectionHeading
           eyebrow="About the author"
           title="More than an author, a voice with a burden"
@@ -338,12 +364,12 @@ export default function BookLaunchLandingPage() {
         />
 
         <div className="mt-10 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="rounded-[2rem] border border-zinc-200 bg-white p-8 shadow-sm">
-            <p className="text-base leading-8 text-zinc-700">
+          <div className="rounded-[2rem]  border border-white/20 bg-white/10 backdrop-blur-md p-8 shadow-sm">
+            <p className="text-base leading-8 text-white">
               {/* Hi, I am <span className="font-semibold text-zinc-950">Timothy Adewole</span>. */}
               My life has been shaped by a strong sense of purpose, a burden to see people live fully, and a conviction that no one should leave their life to chance or live as a mere product of chance and circumstances..
             </p>
-            <p className="mt-5 text-base leading-8 text-zinc-700">
+            <p className="mt-5 text-base leading-8 text-white">
               Through years of teaching, mentoring, speaking, and leadership, I have come to believe that people flourish when they understand who they are, why they are here, and what they are called to build. No one can fully take responsiblity when <span className="font-semibold text-zinc-950"> identity</span> is misplaced. This book is a reflection of that burden.
             </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -428,7 +454,7 @@ export default function BookLaunchLandingPage() {
         <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_1fr]">
           <div className="rounded-[2rem] border border-zinc-200 bg-white p-8 shadow-sm">
             <div className="flex items-center gap-3 text-red-600">
-              <Flame className="h-5 w-5" />
+              <CircleAlert className="h-5 w-5" />
               <p className="text-sm font-semibold uppercase tracking-[0.2em]">
                 Vision statement
               </p>
@@ -469,22 +495,30 @@ export default function BookLaunchLandingPage() {
           subtitle="Building purposeful young men and women for lasting impact.">
         </SectionHeading>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-1 grid gap-6 md:grid-cols-3">
           {gallery.map((image, index) => (
             <div
               key={image.alt}
-              className="group overflow-hidden rounded-[2rem] border border-zinc-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+              className="sticky top-0 h-screen flex items-center justify-center"
+              style={{ zIndex: index + 1 }}
             >
-              <div className="relative aspect-[4/5] overflow-hidden bg-zinc-100">
+              <div className="relative h-[80vh] w-full max-w-5xl overflow-hidden rounded-[2rem] border border-white/20 bg-white/10 backdrop-blur-md shadow-lg shadow-black/30">
+
+                {/* Image */}
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/45 via-transparent to-transparent" />
-                <div className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-zinc-900 backdrop-blur">
-                  0{index + 1}
+
+                {/* Dark overlay for readability */}
+                <div className="absolute inset-0 bg-black/40" />
+
+                {/* Content */}
+                <div className="relative z-10 flex h-full flex-col justify-end p-8 text-white">
+                  <div className="mb-2 text-sm opacity-80">0{index + 1}</div> 
                 </div>
+
               </div>
             </div>
           ))}
@@ -544,7 +578,7 @@ export default function BookLaunchLandingPage() {
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
               <div className="flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-600 text-white">
-                  <BookOpen className="h-5 w-5" />
+                  <CoinsIcon className="h-5 w-5" />
                 </div>
                 <div>
                   <p className="text-sm uppercase tracking-[0.2em] text-zinc-300">
@@ -572,7 +606,7 @@ export default function BookLaunchLandingPage() {
               </div>
 
               <p className="mt-5 text-sm leading-7 text-zinc-300 italic">
-                *50% discount till August 10th.
+                *50% discount till August 10th. Use code <span className="font-semibold text-red-700 italic">MHQ100</span>
               </p>
             </div>
 
