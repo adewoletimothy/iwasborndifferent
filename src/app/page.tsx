@@ -533,7 +533,7 @@ export default function BookLaunchLandingPage() {
         </div>
       </section>
 
-      <section id="reviews" className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-10">
+      {/* <section id="reviews" className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-10">
         <SectionHeading
           eyebrow="Reviews"
           title="What early readers say"
@@ -559,7 +559,7 @@ export default function BookLaunchLandingPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-10">
         <div className="overflow-hidden rounded-[2.25rem] bg-zinc-950 px-8 py-14 text-white shadow-2xl shadow-zinc-950/15 sm:px-10 lg:px-14">
