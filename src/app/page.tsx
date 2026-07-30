@@ -202,7 +202,7 @@ export default function BookLaunchLandingPage() {
             <SectionLink href="#about">About</SectionLink>
             <SectionLink href="#vision">Vision</SectionLink>
             <SectionLink href="#gallery">Gallery</SectionLink>
-            <SectionLink href="#reviews">Reviews</SectionLink>
+            {/* <SectionLink href="#reviews">Reviews</SectionLink> */}
           </nav>
 
           <div className="relative flex items-center gap-2">
@@ -243,13 +243,13 @@ export default function BookLaunchLandingPage() {
                 >
                   Gallery
                 </a>
-                <a
+                {/* <a
                   href="#reviews"
                   onClick={() => setMobileOpen(false)}
                   className="block rounded-2xl px-4 py-3 text-sm font-medium text-zinc-700 transition hover:bg-zinc-100 hover:text-zinc-950"
                 >
                   Reviews
-                </a>
+                </a> */}
               </div>
             )}
           </div>
