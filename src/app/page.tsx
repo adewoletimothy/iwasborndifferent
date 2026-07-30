@@ -353,7 +353,7 @@ export default function BookLaunchLandingPage() {
       <section
         id="about"
         className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-10 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/me.jpg')" }}
+        // style={{ backgroundImage: "url('/me.jpg')" }}
       >
         {/* <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div> */}
 
@@ -362,15 +362,22 @@ export default function BookLaunchLandingPage() {
           title=""
           subtitle=""
         />
-        <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">More than an author, a voice with a burden</h1>
+        <h1 className="text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">More than an author, a voice with a burden</h1>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="rounded-[2rem]  border border-white/20 bg-white/10 backdrop-blur-md p-8 shadow-sm">
-            <p className="text-base leading-8 text-white">
+          <div className="rounded-[2rem]  border border-white/20 bg-white/10 backdrop-blur-md p-3 shadow-sm">
+            <div className="mt-3 overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 p-3">
+                    <img
+                      src="/me.jpg"
+                      alt="Author portrait"
+                      className="aspect-[4/5] w-full rounded-[1.2rem] object-cover object-top grayscale transition duration-500 hover:grayscale-0"
+                    />
+                  </div>
+            <p className="text-base leading-8 text-zinc-950">
               {/* Hi, I am <span className="font-semibold text-zinc-950">Timothy Adewole</span>. */}
               My life has been shaped by a strong sense of purpose, a burden to see people live fully, and a conviction that no one should leave their life to chance or live as a mere product of chance and circumstances..
             </p>
-            <p className="mt-5 text-base leading-8 text-white">
+            <p className="mt-5 text-base leading-8 text-zinc-950">
               Through years of teaching, mentoring, speaking, and leadership, I have come to believe that people flourish when they understand who they are, why they are here, and what they are called to build. No one can fully take responsiblity when <span className="font-semibold text-zinc-950"> identity</span> is misplaced. This book is a reflection of that burden.
             </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
