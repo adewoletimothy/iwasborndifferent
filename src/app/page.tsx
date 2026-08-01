@@ -194,7 +194,7 @@ export default function BookLaunchLandingPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-700">
                 I Was Born Different
               </p>
-              <p className="text-xs text-zinc-500">Book launch</p>
+              <p className="text-xs text-zinc-500">e-Book launch</p>
             </div>
           </a>
 
@@ -566,7 +566,7 @@ export default function BookLaunchLandingPage() {
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
               <p className="text-sm uppercase tracking-[0.24em] text-zinc-300">
-                Ready to preorder?
+                Time to order!
               </p>
               <h3 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
                 Secure your copy and step into the message.
